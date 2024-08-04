@@ -1,13 +1,13 @@
-import CiastkowoLogo from '@/img/logo.png'
+import CiasteczkowoLogo from '@/img/logo.png'
 import NavList from '../components/NavList'
 import './globals.css'
 
 export const metadata = {
   title: {
-    template: 'Ciastkowo - Blog poświęcony ciastom'
+    template: 'Ciasteczkowo - Blog poświęcony ciastom'
   },
   openGraph: {
-    title: 'Ciastkowo',
+    title: 'Ciasteczkowo',
     description: 'Blog poświęcony ciastom'
   }
 }
@@ -18,20 +18,20 @@ export default function Layout({ children }) {
     <div className="px-6 max-w-7xl mx-auto">
       <header className="py-6 relative">
         <nav className="relative flex items-center justify-between sm:h-10 ">
-          <a href="/" aria-label="Ciastkowo">
+          <a href="/" aria-label="Ciasteczkowo">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               width={40}
               height={40}
-              src={CiastkowoLogo.src}
-              alt="Ciastkowo Logo"
+              src={CiasteczkowoLogo.src}
+              alt="Ciasteczkowo Logo"
               className="hidden sm:block h-10"
             />
             <img
               width={40}
               height={40}
-              src={CiastkowoLogo.src}
-              alt="Ciastkowo Logo"
+              src={CiasteczkowoLogo.src}
+              alt="Ciasteczkowo Logo"
               className="h-10 sm:hidden"
             />
           </a>
@@ -47,8 +47,8 @@ export default function Layout({ children }) {
           <div className="sm:flex sm:items-center sm:justify-between">
                 <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
                   © {new Date().getFullYear()} {' '}
-                  <a href="https://ciastkowo.web.app/" className="hover:underline">
-                    Ciastkowo
+                  <a href="https://ciasteczkowo.vercel.app/" className="hover:underline">
+                    Ciasteczkowo
                   </a>
                   . Wszelkie prawa zastrzeżone.
                 </span>
