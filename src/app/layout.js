@@ -1,8 +1,6 @@
 import CiastkowoLogo from '@/img/logo.png'
 import NavList from '../components/NavList'
 import './globals.css'
-import { initializeApp } from 'firebase/app'
-import { isSupported, getAnalytics } from 'firebase/analytics'
 
 export const metadata = {
   title: {
@@ -14,23 +12,6 @@ export const metadata = {
   }
 }
 export default function Layout({ children }) {
-  const firebaseConfig = {
-    apiKey: 'AIzaSyCBv9FPPGVER87lEUTsb-mGEwokT3giopE',
-    authDomain: 'torty-5e5f4.firebaseapp.com',
-    projectId: 'torty-5e5f4',
-    storageBucket: 'torty-5e5f4.appspot.com',
-    messagingSenderId: '662867265850',
-    appId: '1:662867265850:web:26797e0192742565626803',
-    measurementId: 'G-MCZW0XWRQE'
-  }
-  let analytics = null
-  isSupported().then((res) => {
-    if (res) {
-      analytics = getAnalytics(app)
-    }
-  })
-// Initialize Firebase
-  const app = initializeApp(firebaseConfig)
   return (
     <html lang="en">
     <body>
